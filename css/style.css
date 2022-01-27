@@ -3,6 +3,7 @@ body {
     margin: 0;
     background: tomato;
     font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
 }
   
 .roulette {
