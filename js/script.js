@@ -1,7 +1,7 @@
 
-halfangle = ((1 / 37) * 360) / 2;
+const halfangle = ((1 / 37) * 360) / 2;
 
-let currentLength = perfecthalf;
+let currentLength = halfangle;
 let mapOfNums ={
     "0":"26",
     "1":"3",
@@ -42,12 +42,12 @@ let mapOfNums ={
     "36":"0",
 }
 $(".wheel img").css("transform", "rotate(" + halfangle + "deg)");
-var fast=360
+let fast=360
 $(".spin").click(() => {
     $(".quote")[0].innerText="Wait for your number"
 
   $(".wheel img").css("filter", "blur(8px)");
-  var x =getRandomInt(0, 36)
+  let x =getRandomInt(0, 36)
   spininterval = x * (360 / 37)+halfangle;
   fast=fast+360*2;
   currentLength = spininterval+ fast;
